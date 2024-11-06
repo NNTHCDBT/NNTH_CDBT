@@ -1,0 +1,176 @@
+/* PHẦN COURSE*/
+p#red-line {
+    display: inline-block;
+    width: 80px;
+    border-bottom: 3px solid red;
+    margin: 20px auto;
+  }
+main .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+main .top {
+    text-align: left;
+    margin-bottom: 20px;
+}
+main .top h1 {
+    font-size: 24px;
+    margin: 0;
+}
+main .top p {
+    color: #777;
+    margin: 5px 0 0;
+}
+main .cotlon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+main .cot {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+main .cot img {
+    width: 100%;
+    height: auto;
+}
+main .cot-nd {
+    padding: 15px;
+}
+main .cot-nd h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+main .cot-nd p {
+    color: #777;
+    font-size: 14px;
+    margin: 5px 0;
+}
+main .cot-nd .category {
+    color: #e74c3c;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+main .cot-nd .apply-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+/* Phần xử lý video*/
+.media-container {
+    position: relative;
+    width:100%;
+    height:70%;
+    overflow: hidden; 
+}
+
+.media-image {
+    width: 100%;
+    height: 100%;
+    display: block; 
+}
+
+.media-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.media-container:hover .media-image {
+    display: none; 
+}
+
+.media-container:hover .media-video {
+    display: block;
+}
+
+/* hết phần xử lý video */
+/*--------------*/
+/* Phần LECTURERS */
+.khoangcach {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+h2 {
+    text-align: left;
+    color: #1d1650;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.caccot {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cot_t {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 230px;
+}
+.cot_t img {
+    width: 100%;
+}
+.cot_t h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+.cot_t p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0 15px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+.social-icons a{
+    background-color: #f0ad4e;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 14px;
+}
+.social-icons a i{
+    color:#fff;
+}
+/* hiện  thông tin */
+.cot_t {
+    position: relative; /* Để thông tin có thể được định vị chính xác */
+    display: inline-block; /* Giữ cho ảnh và thông tin nằm cùng nhau */
+}
+.info {
+    display: none; /* Ẩn thông tin ban đầu */
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng với độ trong suốt */
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 10;
+    top: 50%; /* Đặt thông tin ở giữa theo chiều dọc */
+    left: 50%; /* Đặt thông tin ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Đẩy thông tin về giữa */
+    text-align: center; /* Căn giữa nội dung */
+}
+.cot_t:hover .info {
+    display: block; /* Hiện thông tin khi rê chuột vào ảnh */
+}
+
