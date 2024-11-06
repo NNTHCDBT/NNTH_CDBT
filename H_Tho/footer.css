@@ -1,0 +1,109 @@
+footer {
+    background-color: #009298;
+    color: white;
+    padding-top: 30px;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10 auto;
+}
+footer .cot {
+    width: 22%;
+    margin: 0 20px;
+} 
+footer .logo {
+    display: flex;
+    align-items: center;
+}
+footer .cot .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+footer .cot .logo h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+footer .cot p,
+footer .cot ul,
+footer .cot li {
+    font-size: 20px;
+    color: #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+footer .cot  a{
+     color: #ccc;
+     text-decoration: none;
+}footer .cot  a:hover{
+     
+     text-decoration: underline;
+}
+
+
+footer .cot i#first{
+    margin-top:20px;
+    margin-right:10px;
+    color:#f5f5f5;
+}
+footer .cot i{
+    margin-right:10px;
+    color:#f7b600;
+}
+footer .cot li {
+    margin-bottom: 10px;
+}
+footer .cot p{
+    text-align: justify;
+}
+footer .cot p#letter{
+    font-size:16px;
+    font-weight: bold;
+}
+footer .cot img:hover{
+	transform:scale(1.05);
+}
+footer .cot .newsletter input {
+    padding:10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    background-color:#002f45;
+    color:#ccc;
+}
+footer .cot .newsletter button {
+    padding:10px;
+    border: none;
+    border-radius: 5px;
+    background-color:#002f45;
+    color:#ccc;
+}
+footer .cot .newsletter button:hover {
+    background-color: #ff9900;
+}
+
+
+footer .footer-bottom {
+    padding: 5px;
+    background-color: #0a2a4a;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+footer .footer-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+}
+footer .footer-bottom p {
+    color: #948989;
+    text-decoration: none;
+    float:left;
+}
+
+footer .footer-bottom a:hover {
+    text-decoration: underline;
+}
