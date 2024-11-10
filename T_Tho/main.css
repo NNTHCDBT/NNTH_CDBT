@@ -1,7 +1,7 @@
 /* PHẦN COURSE*/
 p#red-line {
     display: inline-block;
-    width: 80px;
+    width: 150px;
     border-bottom: 3px solid red;
     margin: 20px auto;
   }
@@ -11,63 +11,83 @@ main .container {
     padding: 20px 0;
 }
 main .top {
+    font-family: Arial;
     text-align: left;
     margin-bottom: 20px;
 }
 main .top h1 {
     font-size: 24px;
+    font-weight: bold;
     margin: 0;
+    color:#040404;
 }
 main .top p {
-    color: #777;
+    color: #2b6971;
     margin: 5px 0 0;
 }
 main .cotlon {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 main .cot {
     background-color: #fff;
-    border: 1px solid #ddd;
     border-radius: 5px;
-    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 30%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
 }
-main .cot img {
+main .card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+main .card img, .card video {
     width: 100%;
-    height: auto;
+    height:220px;
 }
-main .cot-nd {
-    padding: 15px;
+main .card-body {
+    padding: 20px;
 }
-main .cot-nd h3 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-main .cot-nd p {
-    color: #777;
-    font-size: 14px;
-    margin: 5px 0;
-}
-main .cot-nd .category {
-    color: #e74c3c;
-    font-size: 12px;
-    text-transform: uppercase;
+main .card-body h4 {
+    color: #dc3545;
+    font-size: 1em;
     margin-bottom: 10px;
-    display: block;
 }
-main .cot-nd .apply-btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #e74c3c;
+main .card-body h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+main .card-body p {
+    color: #6c757d;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+main .card-body .btn {
+    background-color: #dc3545;
     color: #fff;
-    text-transform: uppercase;
-    font-size: 12px;
-    border-radius: 3px;
+    padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+main .card-body .btn:hover{
+    background-color: #f0ad4e;
+    color:#333;
+}
+main .card video {
+    display: none;
+}
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
 }
 
 /* Phần xử lý video*/
@@ -104,11 +124,16 @@ main .cot-nd .apply-btn {
 /* hết phần xử lý video */
 /*--------------*/
 /* Phần LECTURERS */
+
 .khoangcach {
     width: 80%;
     margin: 0 auto;
     text-align: center;
     padding: 50px 0;
+}
+.cot_t img{
+	width: 100%;
+    height: 70%;
 }
 h2 {
     text-align: left;
@@ -123,13 +148,11 @@ h2 {
 }
 .cot_t {
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
-    width: 230px;
+    width: 15vw;
 }
-.cot_t img {
-    width: 100%;
-}
+
 .cot_t h3 {
     font-size: 18px;
     color: #333;

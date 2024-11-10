@@ -1,13 +1,5 @@
-/* CODE TRONG PHẦN HEADER */
 header {
     border-bottom: 5px solid #9d00ff;
-	font-family: 'Arial';
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    border: nones;
 }
 header .bar {
     background-color: #0074aa;
@@ -66,16 +58,17 @@ header .bar ul li:hover{
     color:#f7b600;
 }
 
-    /*---------------*/
+    
 header .hero {
-    background-image: url(img/anhheader.jpg);
-	background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-image: url(img/anhheader.jpg);	    
     background-position: center;
-    height: 100%;
     position: relative;
     text-align: center;
-    color: white;
+    color: white;	
+	height:300px;					
+	align-items: center;	
+	justify-content: center;		
+	display:flex;
 }
 header .hero img {
     width: 100%;
@@ -94,8 +87,12 @@ header .hero .overlay {
     align-items: center;
 }
 header .hero .overlay h1 {
-    font-size: 48px;
+	font-size: 48px;
     margin: 0;
+	position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 header .hero .overlay p {
     font-size: 18px;
@@ -109,13 +106,13 @@ header .hero .overlay .btn {
     font-weight: 700;
     border-radius: 5px;
 }
-/* bên trong main 3 phần nội dung */
+
 header .nd_header {
     color: white;
     display: flex;
     justify-content:center;
     position:absolute;
-    bottom: 0;
+    bottom:0;
 
 }
 header .nd_header .nd_in {
@@ -132,7 +129,7 @@ header .nd_header .nd_in_cp {
     background-color:rgba(30, 24, 217, 0.5);    
     text-align:auto;
     padding-left:30px;  
-    width:400px;
+    width:20vw;
     height:100px;
     border-left:1px solid white;
     border-right:1px solid white;

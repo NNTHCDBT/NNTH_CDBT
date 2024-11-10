@@ -1,109 +1,190 @@
 footer {
-    background-color: #009298;
-    color: white;
-    padding-top: 30px;
+    background-color: #009298; /* Màu nền của footer */
+    color: white; /* Màu chữ trắng */
+    padding-top: 30px; /* Khoảng cách phía trên của footer */
+   
 }
+
 footer .container {
     display: flex;
-    justify-content: space-between;
-    margin: 10 auto;
+    justify-content: space-between; 
+    flex-wrap: wrap; /* Cho phép các phần tử con tự động xuống dòng khi không còn đủ không gian */
+    margin: 0 auto; 
+    
 }
+
 footer .cot {
-    width: 22%;
-    margin: 0 20px;
-} 
+   width: 22%;
+    margin: 0 10px;
+	min-width: 200px; 
+
+    
+}
+
+
 footer .logo {
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
+
 footer .cot .logo img {
-    height: 40px;
-    margin-right: 10px;
+    height: 100px;
+	width:100px;
+    margin-right: 10px; 
 }
+
 footer .cot .logo h3 {
-    font-size: 15px;
-    margin-bottom: 20px;
+    font-size: 15px; 
+    margin-bottom: 20px; 
 }
+
 footer .cot p,
 footer .cot ul,
 footer .cot li {
-    font-size: 20px;
-    color: #ccc;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    font-size: 18px;
+    color: #ccc; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
 }
 
-
-
-footer .cot  a{
-     color: #ccc;
-     text-decoration: none;
-}footer .cot  a:hover{
-     
-     text-decoration: underline;
+footer .cot a {
+    color: #ccc; 
+    text-decoration: none; /* Loại bỏ gạch dưới mặc định của liên kết */
 }
 
+footer .cot a:hover {
+    text-decoration: underline; /* Hiển thị gạch dưới khi hover vào liên kết */
+    color: #ff9900; /* Màu chữ khi hover */
+}
 
-footer .cot i#first{
-    margin-top:20px;
-    margin-right:10px;
-    color:#f5f5f5;
+footer .cot i {
+    margin-right: 10px; 
+    color: #f7b600; 
 }
-footer .cot i{
-    margin-right:10px;
-    color:#f7b600;
+
+footer .cot i#first {
+    margin-top: 20px; 
+    margin-right: 10px; 
+    color: #f5f5f5; 
 }
+
 footer .cot li {
-    margin-bottom: 10px;
-}
-footer .cot p{
-    text-align: justify;
-}
-footer .cot p#letter{
-    font-size:16px;
-    font-weight: bold;
-}
-footer .cot img:hover{
-	transform:scale(1.05);
-}
-footer .cot .newsletter input {
-    padding:10px;
-    width: 80%;
-    border: none;
-    border-radius: 5px;
-    background-color:#002f45;
-    color:#ccc;
-}
-footer .cot .newsletter button {
-    padding:10px;
-    border: none;
-    border-radius: 5px;
-    background-color:#002f45;
-    color:#ccc;
-}
-footer .cot .newsletter button:hover {
-    background-color: #ff9900;
+    margin-bottom: 10px; 
 }
 
+footer .cot p {
+    text-align: justify; 
+}
+footer .cot img {
+   width: 10vw;
+	height:10vw;
+        min-width: 100px;
+        max-width: 200px;
+}
+footer .cot img:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi hover */
+}
+
+footer .cot .newsletter input {
+    padding: 10px;
+    width: 80%; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #002f45; 
+    color: #ccc; 
+    font-size: 14px; 
+}
+
+footer .cot .newsletter button {
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #002f45; 
+    color: #ccc;
+    cursor: pointer;
+}
+
+footer .cot .newsletter button:hover {
+    background-color: #ff9900; 
+}
 
 footer .footer-bottom {
-    padding: 5px;
-    background-color: #0a2a4a;
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
+    padding: 10px; 
+    background-color: #0a2a4a; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng khi màn hình nhỏ */
 }
+
 footer .footer-bottom a {
-    color: #ffffff;
-    text-decoration: none;
+    color: #ffffff; /* Màu chữ của các liên kết trong phần footer dưới cùng */
+    text-decoration: none; /* Loại bỏ gạch dưới mặc định của liên kết */
 }
+
 footer .footer-bottom p {
-    color: #948989;
-    text-decoration: none;
-    float:left;
+    color: #948989; /* Màu chữ của đoạn văn bản */
+    
 }
 
 footer .footer-bottom a:hover {
-    text-decoration: underline;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(135deg, #f00 0%, #f0f 100%);
+}
+
+footer .card img {
+    margin-right: 10px;
+    height: 3vw; 
+    width: 5vw; 
+}
+
+footer .footer-bottom img {
+    max-width: 50px; 
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    footer .cot {
+        width: 48%; /* Chia thành 2 cột khi màn hình nhỏ */
+        margin: 10px 0; /* Tăng khoảng cách giữa các cột */
+    }
+
+    footer .cot .logo h3 {
+        font-size: 14px;
+    }
+
+    footer .cot .newsletter input {
+        width: 90%;
+    }
+
+    footer .footer-bottom {
+        flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+        align-items: center; /* Căn giữa các phần tử */
+    }
+
+    footer .footer-bottom a {
+        margin: 5px 0; /* Tăng khoảng cách giữa các liên kết */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer .cot {
+        width: 100%; /* Full width cho các phần tử trong footer */
+        margin: 10px 0;
+    }
+
+    footer .footer-bottom {
+        padding: 20px;
+    }
+
+    footer .footer-bottom a {
+        font-size: 14px; /* Giảm kích thước chữ */
+    }
+
+    footer .footer-bottom p {
+        font-size: 14px;
+        text-align: center;
+    }
 }

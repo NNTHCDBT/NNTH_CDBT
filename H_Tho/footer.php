@@ -1,15 +1,4 @@
-<html >
- <head>
- 
-  <title>
-	footer
-  </title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-   <link  rel="stylesheet" href="footer.css"/>
- 
- </head>
- <body>
-<footer>
+
  <footer>
         <div class="container">
             <div class="cot">
@@ -52,12 +41,13 @@
             
              <div class="cot">
               <h3> Hình ảnh</h3>
-              <img height="100" src="H_Tho/img/Flickr 1.jpg" width="120"/>
-              <img height="100" src="H_Tho/img/Flickr 2.jpg" width="120"/>
-              <img height="100" src="H_Tho/img/Flickr 3.jpg" width="120"/>
-              <img height="100" src="H_Tho/img/Flickr 4.jpg" width="120"/>
-              <img height="100" src="H_Tho/img/Flick 5.jpg" width="120"/>
-              <img height="100" src="H_Tho/img/Flickr 6.jpg" width="120"/>
+              <img  src="H_Tho/img/hinhanh1.jpg" />
+			  <img  src="H_Tho/img/hinhanh2.jpg" />            
+              <img  src="H_Tho/img/hinhanh3.jpg" />
+              <img  src="H_Tho/img/hinhanh4.jpg" />
+			  <img  src="H_Tho/img/hinhanh5.jpg" />
+			  <img  src="H_Tho/img/hinhanh6.jpg" />
+             
              </div>
 
             </div>
@@ -71,13 +61,11 @@
                     </p>
 
                     <div class="card">
-                     <img alt="Visa logo" height="30" src="H_Tho/img/Flickr 1.jpg" width="50"/>
-                     <img alt="Discover logo" height="30" src="H_Tho/img/Flickr 1.jpg" width="50"/>
-                     <img alt="PayPal logo" height="30" src="H_Tho/img/Flickr 1.jpg" width="50"/>
-                     <img alt="MasterCard logo" height="30" src="H_Tho/img/Flickr 1.jpg" width="50"/>
+                     <img  src="H_Tho/img/anhbottom1.jpg" />
+                     <img  src="H_Tho/img/anhbottom2.jpg" />
+                     <img  src="H_Tho/img/anhbottom3.jpg" />
+                     <img  src="H_Tho/img/anhbottom1.jpg"" />
                     </div>
             </div>
 
     </footer>
- </body>
- </html>

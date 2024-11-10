@@ -1,13 +1,13 @@
-    <header>
+<header>
         <div class="bar">
             <div class="container">
              <div class="logo">
-              <img height="40" src="img/academic.png" width="40"/>
+              <img height="40" src="L_Hai/img/academic.png" width="40"/>
               <p>ACADEMICS</p>
              </div>
              <ul class="nav-links">
                 <li>HOME</li>
-                <li>PAGES</li>
+                <li><a href="https://k23cdtinguyentho.github.io/BaiTap/home.html">PAGES</a></li>
                 <li>COURSES</li>
                 <li>RESEARCH</li>
                 <li>NEWS</li>
@@ -51,4 +51,5 @@
                </div>
             </div>   
         </div>
-    </header>
+    
+ </header>
